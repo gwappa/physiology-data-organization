@@ -1,16 +1,16 @@
-# Data organization: Let data tell what you did
+# Data organization: Let data speak about what you did
 
 Keisuke Sehara
 
-
-
-The MIT License
+Copyright (c) 2019 Keisuke Sehara, the MIT License
 
 
 
 ## Introduction
 
 ### Why does data organization matter?
+
+Without a common organization...
 
 - You may not find out what data is missing for which experiment:
   - Data tends to get dispersed over time, in different hard drives, in different computers.
@@ -31,12 +31,12 @@ The MIT License
 
 ### What to save and organize?
 
-- __Raw data__:  which is _very_ difficult to define...
+- __Raw data__: __all that you obtained during experiments__:
   - "Any first-order experimental quality being acquired or generated with the use of a distinct method, and being stored to be analyzed later" (Sehara, 2019)
   - In principle, any experimental quality that are acquired and stored by a program (including a human being) may be a set of raw data.
   - Videos, traces of physiological measurements, annotated states of behavior or a behavioral task etc.
   - The data you obtained through conversion or analysis is normally _not_ considered as the raw data (but there are always some exceptions e.g. when your data uses a closed/proprietary format).
-- __Metadata__: information and settings that are used to obtain the raw data, including:
+- __Metadata__: __every parameter you set to obtain the data__, including:
   - _Information about animals_: e.g. species/strain/sex, date of birth, animal-specific experimental conditions, date of surgery, dates of behavioral trainings and sessions
   - _Information about experimental conditions_: e.g. type of the virus/drug(s) used, the protocol of viral/drug injection (method/area/type etc.), the type and the algorithm of the behavioral task or the stimulation protocol, input resistance of the pipette
   - _Information about acquisition hardwares_: e.g. part number, filter/gain settings
@@ -48,6 +48,8 @@ The MIT License
 ### BIDS: a way to organize "brain-imaging" data
 
 <img src="images/ref/BIDS.png" alt="Organization of BIDS" style="zoom:75%;" />
+
+"Brain Imaging Data Structure (BIDS)" is the data structure proposed at [Gorgolewski et al., 2016 Sci Data](https://dx.doi.org/10.1038/sdata.2016.44).
 
 - Forces to use a specific directory structure: `/ (Subject) / (Session) / (Data type) / (Data files) `
 - Recommends to split between "raw-data/metadata" and "derived data"
@@ -118,6 +120,8 @@ Here I show my assumptions on how an experiment may be organized: the important 
 
 ### Focusing on the multi-dimensional structure
 
+<img src="images/doc/metadata.png" alt="Multidimensionality of an experiment" style="zoom: 20%;" />
+
 - Experiments are multi-dimensional in nature
   - Temporal (perturbations, recordings)
   - Spatial (hardwares, stereotactic, laminar)
@@ -127,3 +131,8 @@ Here I show my assumptions on how an experiment may be organized: the important 
   - spans across some dimensions simultaneously
   - exists in a certain relationship with the others
 
+
+
+### amorphys: my attempt to organize metadata
+
+TODO
