@@ -136,3 +136,42 @@ Here I show my assumptions on how an experiment may be organized: the important 
 ### amorphys: my attempt to organize metadata
 
 TODO
+
+
+
+## Schema or Ontology?
+
+(TODO: reshape the content)
+
+### Ontology
+
+Ontology is the concept normally used to describe linked data.
+
+One notable feature related to this concept is its descriptive nature. Typically, there is no assumption on the form of the graph that represents a set of linked data.
+
+Another important aspect is that description is made uniquely across the world of internet. Normally, for any relationship, the subject, the object, and (even) the meaning of the relationship is uniquely defined in terms of URI. This reflects the fact that the concept is proposed to implement the semantic web.
+
+On top of them is the cardinal notion of "open-world assumption". We can be only sure to the extent any description is made, while we must remain ignorant about what is not stated. If nothing is stated for relationships between entities A and B, we don't know whether there are any relationships there or not. As an extreme, it is even possible that A and B represent the same single object in the end.
+
+
+
+### Schema
+
+On the other hand, the notion of a schema implies existence of a certain assumption, or a certain structural constraints. In this sense, the form that a graph can take is fixed or limited. If your object does not conform to the schema definition, it simply means that your description is wrong. Unlike ontology that sets the outer boundary of an object (in terms of the set theory), a schema represents an inner boundary of it.
+
+This nature of a schema definition has some deterministic consequences. If the values of a property differ between objects A and B, then A and B is different by definition. As a corollary, if you want to claim that A and B represent the same single object, and still they differ in the values of a property, the only implication is that the information of either A or B is wrong, or at least ill-formed.
+
+The notable feature of a schema definition is that  its world is closed. You can infer various things in a deterministic way if an object conforms to a schema, but you cannot possibly apply the logic at all to an object that doesn't (or, for example, if the object conforms to another incompatible schema). This aspect makes a stark contrast to the nature of ontology, as any ontology retains a possibility to be applied to any objects on the web.In summary, an ontology forms a bottom-up, descriptive open world, whereas a schema shapes a top-down, prescriptive closed-world.
+
+
+
+### Which one should we use?
+
+Finally it comes to the initial question: which approach should we take, ontological or schematic?
+
+As we try to frame the question of how to organize data and metadata, we have been assuming some general structures common to all the physiology experiments. In that sense, I believe that entities must be schematically defined rather than ontologically. On the other hand, we remain descriptive when we define relationships between entities. I therefore propose to define relationships based on ontology.In other words, it may be also defined as follows:
+
+- anything that is prescriptive in any sense must be an entity.
+
+- aspects that stays descriptive in any sense must be relationships.
+
