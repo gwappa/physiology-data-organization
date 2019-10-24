@@ -49,7 +49,7 @@ Without a common organization...
 
 <img src="images/ref/BIDS.png" alt="Organization of BIDS" style="zoom:75%;" />
 
-"Brain Imaging Data Structure (BIDS)" is the data structure proposed at [Gorgolewski et al., 2016 Sci Data](https://dx.doi.org/10.1038/sdata.2016.44).
+"Brain Imaging Data Structure (BIDS)" is the data structure proposed in [Gorgolewski et al., 2016 Sci Data](https://dx.doi.org/10.1038/sdata.2016.44).
 
 - Forces to use a specific directory structure: `/ (Subject) / (Session) / (Data type) / (Data files) `
 - Recommends to split between "raw-data/metadata" and "derived data"
@@ -135,43 +135,66 @@ Here I show my assumptions on how an experiment may be organized: the important 
 
 ### amorphys: my attempt to organize metadata
 
-TODO
+- Description of experiments based on several concepts:
+  - **Entity**: description of physical existence
+  - **Relationship**: description of relationships between entities
+  - **Variable**: description of experimental variables
+- Choices of markup languages:
+  - JSON/YAML
+  - XML (TODO)
 
 
 
 ## Schema or Ontology?
 
-(TODO: reshape the content)
+### Ontology: a bottom-up, "open-world" description
 
-### Ontology
+- A concept originated from the semantic-web initiatives:
+  - Describes relationships between entities in the internet, by means of a predicate logic and combinations of URIs.
+  - Normally, for any relationship, the subject, the object, and (even) the meaning of the relationship is uniquely defined in terms of URI.
+  - Common format: RDF (written in XML, Turtle, JSON-RD etc.)
+- Descriptive:
+  - typically, there is no assumption on the form of the graph that represents a set of linked data: an ontology sets the lower bound of all the possible relationships 
+  - "open-world assumption": we can be only sure to the extent any description is made, while we must remain ignorant about what is not stated
 
 Ontology is the concept normally used to describe linked data.
 
 One notable feature related to this concept is its descriptive nature. Typically, there is no assumption on the form of the graph that represents a set of linked data.
 
-Another important aspect is that description is made uniquely across the world of internet. Normally, for any relationship, the subject, the object, and (even) the meaning of the relationship is uniquely defined in terms of URI. This reflects the fact that the concept is proposed to implement the semantic web.
-
-On top of them is the cardinal notion of "open-world assumption". We can be only sure to the extent any description is made, while we must remain ignorant about what is not stated. If nothing is stated for relationships between entities A and B, we don't know whether there are any relationships there or not. As an extreme, it is even possible that A and B represent the same single object in the end.
+If nothing is stated for relationships between entities A and B, we don't know whether there are any relationships there or not. As an extreme, it is even possible that A and B represent the same single object in the end.
 
 
 
-### Schema
+### Schema: a top-down, "closed-world" description
 
-On the other hand, the notion of a schema implies existence of a certain assumption, or a certain structural constraints. In this sense, the form that a graph can take is fixed or limited. If your object does not conform to the schema definition, it simply means that your description is wrong. Unlike ontology that sets the outer boundary of an object (in terms of the set theory), a schema represents an inner boundary of it.
+- Has been used to validate the structure of a document e.g. web pages:
+  - Describes how a document should be structured.
+  - Keywords must be defined in terms of URIs, but the content of the data does not have to be "unique" in the world of internet (i.e. does not have to have a URI).
+  - Common format: language-specific schema format (XML Schema, JSON Schema etc.)
+- Prescriptive and deterministic:
+  - The form that a graph can take is fixed or limited: a schema sets the upper bound of how a document may be structured
+  - If your object does not conform to the schema definition, it simply means that your description is wrong
 
 This nature of a schema definition has some deterministic consequences. If the values of a property differ between objects A and B, then A and B is different by definition. As a corollary, if you want to claim that A and B represent the same single object, and still they differ in the values of a property, the only implication is that the information of either A or B is wrong, or at least ill-formed.
 
-The notable feature of a schema definition is that  its world is closed. You can infer various things in a deterministic way if an object conforms to a schema, but you cannot possibly apply the logic at all to an object that doesn't (or, for example, if the object conforms to another incompatible schema). This aspect makes a stark contrast to the nature of ontology, as any ontology retains a possibility to be applied to any objects on the web.In summary, an ontology forms a bottom-up, descriptive open world, whereas a schema shapes a top-down, prescriptive closed-world.
+You can infer various things in a deterministic way if an object conforms to a schema, but you cannot possibly apply the logic at all to an object that doesn't (or, for example, if the object conforms to another incompatible schema).
 
 
 
 ### Which one should we use?
 
-Finally it comes to the initial question: which approach should we take, ontological or schematic?
+Finally it comes to the initial question: which approach should we take, ontological or schematic? Considering my assumptions below, we must use both: the question is rather about which one is suitable for describing what.
 
-As we try to frame the question of how to organize data and metadata, we have been assuming some general structures common to all the physiology experiments. In that sense, I believe that entities must be schematically defined rather than ontologically. On the other hand, we remain descriptive when we define relationships between entities. I therefore propose to define relationships based on ontology.In other words, it may be also defined as follows:
+- My assumptions:
+  - Some general structures are common to all the physiology experiments: descriptions must be schematic rather than ontological.
+  - We remain descriptive when we define what entities are, and their relationships between each other.
 
-- anything that is prescriptive in any sense must be an entity.
+- Corollary:
+  - Any expression that is prescriptive must be a description.
+  - An aspect that stays descriptive in any sense must be a definition.
+- Strategy to be taken:
+  - We use structures based on a certain schema for describing how to organize data and metadata, and for validating specific datasets to be published.
+  - We use terms defined ontologically for characterizing entities and their relationships.
 
-- aspects that stays descriptive in any sense must be relationships.
+After all, it seems that these different concepts reflect the two sides of the same thing.
 
