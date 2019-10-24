@@ -2,7 +2,11 @@
 
 Keisuke Sehara
 
-Copyright (c) 2019 Keisuke Sehara, the MIT License
+
+
+![license](https://i.creativecommons.org/l/by/4.0/88x31.png)
+
+This document is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
 
@@ -10,7 +14,7 @@ Copyright (c) 2019 Keisuke Sehara, the MIT License
 
 ### Why does data organization matter?
 
-Without a common organization...
+Without any agreed data organization:
 
 - You may not find out what data is missing for which experiment:
   - Data tends to get dispersed over time, in different hard drives, in different computers.
@@ -32,10 +36,13 @@ Without a common organization...
 ### What to save and organize?
 
 - __Raw data__: __all that you obtained during experiments__:
-  - "Any first-order experimental quality being acquired or generated with the use of a distinct method, and being stored to be analyzed later" (Sehara, 2019)
-  - In principle, any experimental quality that are acquired and stored by a program (including a human being) may be a set of raw data.
-  - Videos, traces of physiological measurements, annotated states of behavior or a behavioral task etc.
-  - The data you obtained through conversion or analysis is normally _not_ considered as the raw data (but there are always some exceptions e.g. when your data uses a closed/proprietary format).
+  - Definition is difficult, but probably something like: "Any first-order experimental quality being acquired or generated with the use of a distinct method, and being stored to be analyzed later" (Sehara, 2019)
+  - In principle, any experimental quality that are acquired and stored by a program (including a human being) may be considered as "raw data":
+    - Videos
+    - Traces of physiological measurements
+    - Annotated states of behavior or a behavioral task
+    - etc.
+  - The data you obtained through conversion or analysis is normally _not_ considered as the raw data (but there may be always some exceptions e.g. when your data uses a closed/proprietary format).
 - __Metadata__: __every parameter you set to obtain the data__, including:
   - _Information about animals_: e.g. species/strain/sex, date of birth, animal-specific experimental conditions, date of surgery, dates of behavioral trainings and sessions
   - _Information about experimental conditions_: e.g. type of the virus/drug(s) used, the protocol of viral/drug injection (method/area/type etc.), the type and the algorithm of the behavioral task or the stimulation protocol, input resistance of the pipette
