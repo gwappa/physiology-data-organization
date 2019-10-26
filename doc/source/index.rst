@@ -9,26 +9,17 @@
 Data organization: let data speak about what you did
 ===================================================================================
 
-Keisuke Sehara
-
-.. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
-   :alt: License: CC-BY 4.0
-   :align: center
-
-   This document is licensed under a :raw-html:`<br />`
-   `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
-   intro/why_bother   
+
+   intro/why_bother
    intro/data_and_metadata
    raw_data_organization
    metadata_organization
 
 .. note:: Things yet to be added:
-   
+
    - Exact specifications of raw-data/metadata format (in separate web sites)
    - Workflows:
 
@@ -37,9 +28,16 @@ Keisuke Sehara
      - Validation of the dataset
      - Publishing a dataset
 
+ .. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
+    :alt: License: CC-BY 4.0
+    :align: center
+
+    This document is licensed under a :raw-html:`<br />`
+    `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
+
 .. Indices and tables
    ==================
-   
+
    * :ref:`genindex`
    * :ref:`modindex`
    * :ref:`search`
