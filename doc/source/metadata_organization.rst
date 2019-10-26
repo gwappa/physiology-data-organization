@@ -17,7 +17,7 @@ Metadata is complex
   is sufficient for reproducing our data:
 
   - Let's not think about *whether* it is sufficient for reproduction.
-  - No matter if it is reproducible, making notes on what you did 
+  - No matter if it is reproducible, making notes on what you did
     helps you remember/describe your experiments.
 
 Focusing on the multi-dimensional structure
@@ -45,7 +45,12 @@ Probably, structuring the metadata helps organize our thoughts.
 amorphys: an attempt to organize metadata
 -----------------------------------------
 
-Project website: `https://github.com/gwappa/amorphys <https://github.com/gwappa/amorphys>`_ (being set up).
+=============== ==================================================================================================
+Page            URL
+=============== ==================================================================================================
+Project website `https://github.com/gwappa/amorphys <https://github.com/gwappa/amorphys>`_
+Documentation   `https://amorphys-documentation.readthedocs.io/ <https://amorphys-documentation.readthedocs.io/>`_
+=============== ==================================================================================================
 
 - Description of experiments based on several concepts:
 
@@ -57,4 +62,3 @@ Project website: `https://github.com/gwappa/amorphys <https://github.com/gwappa/
 
   - JSON/YAML
   - XML
-
