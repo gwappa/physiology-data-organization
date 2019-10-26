@@ -18,6 +18,13 @@ Data organization: let data speak about what you did
    raw_data_organization
    metadata_organization
 
+.. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
+ :alt: License: CC-BY 4.0
+ :align: center
+
+ This document is licensed under a :raw-html:`<br />`
+ `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
+
 .. note:: Things yet to be added:
 
    - Exact specifications of raw-data/metadata format (in separate web sites)
@@ -27,14 +34,6 @@ Data organization: let data speak about what you did
      - Acquiring a dataset
      - Validation of the dataset
      - Publishing a dataset
-
-  
- .. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
-    :alt: License: CC-BY 4.0
-    :align: center
-
-    This document is licensed under a :raw-html:`<br />`
-    `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
 
 .. Indices and tables
    ==================
