@@ -28,6 +28,8 @@ Data organization: let data speak about what you did
      - Validation of the dataset
      - Publishing a dataset
 
+
+
  .. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
     :alt: License: CC-BY 4.0
     :align: center
