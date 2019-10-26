@@ -6,7 +6,7 @@
 .. role:: raw-html(raw)
    :format: html
 
-Physiology data organization: :raw-html:`<br />` let data speak about what you did
+Data organization: let data speak about what you did
 ===================================================================================
 
 Keisuke Sehara
@@ -26,6 +26,16 @@ Keisuke Sehara
    intro/data_and_metadata
    raw_data_organization
    metadata_organization
+
+.. note:: Things yet to be added:
+   
+   - Exact specifications of raw-data/metadata format (in separate web sites)
+   - Workflows:
+
+     - Designing/describing an experiment
+     - Acquiring a dataset
+     - Validation of the dataset
+     - Publishing a dataset
 
 .. Indices and tables
    ==================
