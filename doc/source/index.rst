@@ -9,6 +9,8 @@
 Physiology data organization: :raw-html:`<br />` let data speak about what you did
 ===================================================================================
 
+Keisuke Sehara
+
 .. figure:: https://i.creativecommons.org/l/by/4.0/88x31.png
    :alt: License: CC-BY 4.0
    :align: center

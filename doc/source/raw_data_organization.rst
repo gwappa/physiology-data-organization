@@ -84,6 +84,8 @@ My suggestion: rDOPE
 
 A raw-data organization of physiology experiments (rDOPE) is inspired by BIDS, and uses the organization of `/ (Subject) / (Session) / (Program) / (Data)`.
 
+Project website: (TO BE PREPARED)
+
 - You can use **alphabets, numbers and the hyphen ([a-zA-Z0-9-])** for file- and directory-name components (subject name, program name etc.).
   
   - Underscores "_" are only used to concatenate name components in file names.
