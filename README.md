@@ -46,7 +46,7 @@ Without any agreed data organization:
 - __Metadata__: __every parameter you set to obtain the data__, including:
   - _Information about animals_: e.g. species/strain/sex, date of birth, animal-specific experimental conditions, date of surgery, dates of behavioral trainings and sessions
   - _Information about experimental conditions_: e.g. type of the virus/drug(s) used, the protocol of viral/drug injection (method/area/type etc.), the type and the algorithm of the behavioral task or the stimulation protocol, input resistance of the pipette
-  - _Information about acquisition hardwares_: e.g. part number, filter/gain settings
+  - _aInformation about acquisition hardwares_: e.g. part number, filter/gain settings
 
 
 
